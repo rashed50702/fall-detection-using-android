@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+<!--    <com.google.android.material.appbar.MaterialToolbar-->
+<!--        android:id="@+id/myToolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/colorPrimaryDark"-->
+<!--        android:elevation="4dp"/>-->
+
+    <TextView
+        android:id="@+id/xText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X: " />
+    <TextView
+        android:layout_below="@id/xText"
+        android:id="@+id/yText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y: " />
+    <TextView
+        android:layout_below="@id/yText"
+        android:id="@+id/zText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z: " />
+    <TextView
+        android:layout_below="@id/zText"
+        android:id="@+id/acreader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sum: " />
+    <TextView
+        android:id="@+id/latValueId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acreader"
+        android:text="Latitude: "/>
+    <TextView
+        android:id="@+id/longValueId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latValueId"
+        android:text="Longitude: "/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/contactSetBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="CREATE CARETAKER"
+            android:textSize="16dp"
+            android:textFontWeight="600"
+            android:textColor="@color/btnTxtColor"
+            android:padding="20dp"
+            app:icon="@drawable/ic_person_add_white_24dp"
+            app:iconSize="40dp"
+            app:iconTint="@color/btnTxtColor"
+            app:strokeColor="@color/btnStrokeColor"
+            app:strokeWidth="3dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/btnBackground"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/showCaretakerBtn"
+            android:layout_below="@id/contactSetBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SHOW CARETAKER"
+            android:textSize="16dp"
+            android:textFontWeight="600"
+            android:textColor="@color/btnTxtColor"
+            android:padding="20dp"
+            app:icon="@drawable/ic_person_pin_white_24dp"
+            app:iconSize="40dp"
+            app:iconTint="@color/btnTxtColor"
+            app:strokeColor="@color/btnStrokeColor"
+            app:strokeWidth="3dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/btnBackground"
+            />
+
+
+        <!--        <Button-->
+<!--            android:id="@+id/contactSetBtn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/circle"-->
+<!--            android:drawableTop="@drawable/ic_person_add_white_24dp"-->
+<!--            android:paddingTop="20dp"-->
+<!--            android:text="Create Contact"-->
+<!--            android:textColor="#fff"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:backgroundTint="@color/colorAccent"/>-->
+<!--        <Button-->
+<!--            android:layout_below="@id/contactSetBtn"-->
+<!--            android:id="@+id/showCaretakerBtn"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/circle"-->
+<!--            android:drawableTop="@drawable/ic_person_pin_white_24dp"-->
+<!--            android:paddingTop="20dp"-->
+<!--            android:text="Show Contact"-->
+<!--            android:textColor="#fff"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:backgroundTint="@color/colorAccent"-->
+<!--            />-->
+
+    </LinearLayout>
+
+</RelativeLayout>

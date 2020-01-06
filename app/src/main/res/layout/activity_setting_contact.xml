@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".settingContact">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@color/btnTxtColor">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/caretakerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name:"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_below="@id/nameInputLayout"
+            android:id="@+id/phoneInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="5dp"
+            android:textColorHint="#fff">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/caretakerPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:hint="Phone:"
+                android:inputType="phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/contactSaveBtn"
+            android:layout_below="@id/phoneInputLayout"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="✔ SAVE"
+            android:textSize="18dp"
+            android:textFontWeight="600"
+            android:textColor="@color/btnTxtColor"
+            app:strokeColor="@color/btnStrokeColor"
+            app:strokeWidth="3dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/btnBackground"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

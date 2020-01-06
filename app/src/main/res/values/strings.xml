@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Fall Detection</string>
+    <string name="title_activity_fall_test">Fall Testing</string>
+</resources>
